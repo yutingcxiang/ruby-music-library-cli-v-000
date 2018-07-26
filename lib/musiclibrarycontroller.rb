@@ -3,6 +3,7 @@ class MusicLibraryController
   
   def initialize(path = "./db/mp3s")
     @path = path if path
+<<<<<<< HEAD
     MusicImporter.new(path).import
   end
   
@@ -90,5 +91,11 @@ class MusicLibraryController
       num_song = sorted_songs[answer - 1]
       puts "Playing #{num_song.name} by #{num_song.artist.name}"
     end
+=======
+    MusicImporter.new(path)
+  end
+  
+  def call
+>>>>>>> a46290609927902d02193037fe00fa859e78e67f
   end
 end
